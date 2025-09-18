@@ -236,3 +236,9 @@ source "drivers/counter/Kconfig"
 
 source "drivers/most/Kconfig"
 endmenu
+
+menu "NVDLA driver"
+
+source "drivers/nvdla/kmd/Kconfig"
+
+endmenu
