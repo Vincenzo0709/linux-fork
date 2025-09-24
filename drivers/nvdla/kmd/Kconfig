@@ -1,0 +1,5 @@
+config NVDLA_KMD
+    tristate "NVDLA Kernel Module Driver"
+    help
+        This is the NVDLA Kernel Module Driver.
+        Can be built as a module (M) or built-in (Y)
