@@ -437,6 +437,6 @@ static struct platform_driver nvdla_driver = {
 };
 module_platform_driver(nvdla_driver);
 
-MODULE_LICENSE("Dual BSD/GPL");
+MODULE_LICENSE("GPL");
 MODULE_AUTHOR("NVIDIA");
 MODULE_DESCRIPTION("Nvidia Deep Learning Accelerator driver");
