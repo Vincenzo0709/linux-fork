@@ -438,8 +438,8 @@ int32_t nvdla_drm_probe(struct nvdla_device *nvdla_dev)
 	 * read memory range
 	 */
 	dma = dma_declare_coherent_memory(drm->dev, 0xC0000000, 0xC0000000,
-			0x40000000, DMA_MEMORY_MAP | DMA_MEMORY_EXCLUSIVE);
-	if (!(dma & DMA_MEMORY_MAP)) {
+			0x40000000, DMA_MEMORY_EXCLUSIVE);
+	if (!(dma)) {
 		err = -ENOMEM;
 		goto unref;
 	}
